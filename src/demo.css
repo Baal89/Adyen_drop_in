@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
 *,
 *:after,
 *:before {
@@ -256,4 +258,64 @@ pre {
 #boletobancario-container,
 #boletobancario-result-container {
     width: 550px;
+}
+
+/* ----------------------------------------- CSS customization-*/
+
+:root {
+    --candy-primary: #FACCCC;
+    --candy-primary-dark: #FFA0A0;
+    --candy-secondary: #EE5959;
+    --candy-highlight: #facccc;
+    --candy-hover: #FEE5EB;
+    --candy-background: #FFFAFA;
+}
+:root {
+    --dark-primary: #5CF0CC;
+    --dark-primary-dark: #05E8B1;
+    --dark-secondary: #06f;
+    --dark-highlight: #CDFAEF;
+    --dark-hover: #394962;
+    --dark-background: #1C1C1C;
+    --dark-border: #374661;
+}
+:root {
+    --gradient-primary: #D51366;
+    --gradient-secondary: #E32351;
+    --gradient-highlight: #eeaabf;
+    --gradient-hover: #FEE5EB;
+}
+:root {
+    --playful-primary: #F3B956;
+    --playful-primary-dark: #DC8B00;
+    --playful-secondary: #3EA68B;
+    --playful-highlight: #b5dad2;
+    --playful-hover: #F9F9F9;
+}
+
+.input-field:placeholder-shown {
+    color: rgb(185, 196, 201);
+    font-weight: 200;
+}
+
+.adyen-checkout__button.adyen-checkout__button--pay {
+    background: var(--playful-primary);
+    box-shadow: 0 2px 0 0 var(--playful-primary-dark);
+    font-weight: bold;
+    width: 50%;
+    margin-right: 0;
+    margin-left: 50%;
+    font-family: 'Sora', sans-serif;
+    transition: background .3s ease-out;
+}
+
+.adyen-checkout__button.adyen-checkout__button--pay:hover{
+    background: var(--playful-primary-dark);
+    border: 0;
+}
+
+.input-field:focus {
+    outline: 0 !important;
+    border: 1px solid black;
+    box-shadow: 0 0 10px var(--dark-primary) !important;
 }

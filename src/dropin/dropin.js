@@ -56,7 +56,7 @@ getClientKey().then(clientKey => {
         // 2. Create and mount the Component
         const dropin = checkout
             .create('dropin', {
-                showStoredPaymentMethods: false
+                showStoredPaymentMethods: true
             })
             .mount('#dropin-container');
     })
